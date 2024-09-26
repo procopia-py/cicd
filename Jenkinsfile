@@ -3,10 +3,10 @@ pipeline {
 
     //pLEASE MODIFY THIS
     environment {
-        DOCKER_USERNAME = 'wiley19'
-        AWS_REGION = 'eu-west-2'  // Replace with your desired region
-        EC2_USER = 'ec2-user'     // Replace with your EC2 user
-        EC2_IP = '18.170.117.56'
+        DOCKER_USERNAME = 'procopia-py'
+        AWS_REGION = 'ap-east-1b'  // Replace with your desired region
+        EC2_USER = 'ubuntu'     // Replace with your EC2 user
+        EC2_IP = '18.162.50.166'
         DOCKER_IMAGE_NAME = 'to-do-list'
         DOCKER_IMAGE_TAG = 'latest'
         SOURCE_IMAGE_NAME = 'node:14.15.0' // or the image you are pulling
@@ -19,7 +19,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: '4', url: 'https://github.com/willie191998/to-do-app-with-docker-jerkins-amplify.git', branch: 'master'
+                git credentialsId: '4', url: 'https://github.com/procopia-py/cicd.git', branch: 'main'
                 echo "Cloning Repo..."
             }
         }
