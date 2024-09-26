@@ -3,7 +3,7 @@ pipeline {
 
     //pLEASE MODIFY THIS
     environment {
-        DOCKER_USERNAME = 'procopia-py'
+        DOCKER_USERNAME = 'procopia'
         AWS_REGION = 'ap-east-1b'  // Replace with your desired region
         EC2_USER = 'ubuntu'     // Replace with your EC2 user
         EC2_IP = '18.162.50.166'
