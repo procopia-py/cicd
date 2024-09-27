@@ -71,7 +71,7 @@ pipeline {
                 script { 
                     echo 'Deploying Docker image to EC2'
                     def fullImageName = "${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}"
-                        sshagent(['5']) {
+                        sshagent(['a54a166a-9b15-4a55-ac63-cc7b0bf79108']) {
                         
                         // Connect to the EC2 instance and execute commands
                         sh '''
