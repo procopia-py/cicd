@@ -112,7 +112,7 @@ pipeline {
 
 /*
 ls -a && \
-                            mkdir -p ./docker && \
+                            mkdir -p ./docker && \ 
                             if [ -d /docker ] && \
                             then && \
                                 if [ "$(ls -A /docker)" ] && \
